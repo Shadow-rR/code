@@ -1,0 +1,12 @@
+1.Input t
+2.For every test case t input N and P.
+3.Another P inputs are taken.(hartal parameter of each party)
+4.Set days_off=0.
+5.A loop is run from i=1 to N
+6.In the loop set ct=0.
+7.Another loop is run within the previous which will run 
+from j=0 to P
+8.Check if i%h[j] equals 0.If the condition satisfied raise ct to 1 else go to next iteration.
+9.outside of j loop check whether ct=1, if yes raise the days_off by 1.
+10.Check if i%7 equals 5 ,if yes perform i=i+2
+11.Outside of the i loop print the days_off.
