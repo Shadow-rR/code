@@ -13,7 +13,7 @@ check whether day i has any hartal by simply checking whether day i is a multipl
 equals zero or not.
 8. If i mod hj os 0 then we raise the counter ct to 1 and break.
 
-9. If the counter ct=1 it means there is a hartal on working day and we raise the value of days_off by 1.
+9. If the counter ct not equals 0 it means there is a hartal on working day and we raise the value of days_off by 1.
 10.To make sure that we do not check for non working day we check whether i mod 7 equals 5 means whether it is thursday. If it is thursday we raise the value of i 
 by 2 so that we just skip friday and saturday and start simulating from Sunday.
 11.After the i loop terminates we print the days_off.
