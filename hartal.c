@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-	int i,j,t,p,ct=0,s=0,n;
+	int i,j,t,p,ct=0,days_off=0,n;
 	scanf("%d",&t);
 	while(t--)
 	{
 		scanf("%d",&n);
 		scanf("%d",&p);
 		int h[p];
-		for(i=0;i<p;i++)
+		for(j=0;j<p;j++)
 		{
-			scanf("%d",&h[i]);
+			scanf("%d",&h[j]);
 		}
-		s=0;
+		days_off=0;
 		for(i=1;i<=n;i++)
 		{
 			ct=0;
@@ -24,12 +24,12 @@ int main()
 				}
 			}
 			if(ct>0)
-			s++;
+			days_off++;
 			if(i%7==5)
 			{
 				i+=2;
 			}
 		}
-		printf("%d\n",s);
+		printf("%d\n",days_off);
 	}
 }
