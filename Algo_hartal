@@ -7,6 +7,6 @@
 7.Another loop is run within the previous which will run 
 from j=0 to P
 8.Check if i%h[j] equals 0.If the condition satisfied raise ct to 1 else go to next iteration.
-9.outside of j loop check whether ct=1, if yes raise the days_off by 1.
+9.outside of j loop check whether ct not equals 0, if yes raise the days_off by 1.
 10.Check if i%7 equals 5 ,if yes perform i=i+2
 11.Outside of the i loop print the days_off.
