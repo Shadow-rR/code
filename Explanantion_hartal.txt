@@ -1,0 +1,19 @@
+1. First we will input t which is the number of test cases our program will work on.
+2. For every test case the user has to input a value N (7 ≤ N ≤ 3, 650), giving
+the number of days over which the simulation must be run and another integer P (1 ≤ P ≤ 100) representing the number of political parties.
+3. Next we will take P line inputs the jth
+of the next P lines contains a positive integer hi (
+which will never be a multiple of 7)
+giving the hartal parameter for party i (1 ≤ i ≤ P).
+4. We initialise days_off=0 which will store the number of days off and reset to 0 on next sample test case.
+5. We run a loop from i=1 to N the 'i' represents the ith day of simulation.
+6. Next we initialize a counter ct=0 in the loop which will act as a flag and turn 1 if we have a hartal on a working day.
+7. In the loop j=1 to P ,we
+check whether day i has any hartal by simply checking whether day i is a multiple of hartal parameter hj or not.This is done by checking whether i mod j
+equals zero or not.
+8. If i mod hj os 0 then we raise the counter ct to 1 and break.
+
+9. If the counter ct=1 it means there is a hartal on working day and we raise the value of days_off by 1.
+10.To make sure that we do not check for non working day we check whether i mod 7 equals 5 means whether it is thursday. If it is thursday we raise the value of i 
+by 2 so that we just skip friday and saturday and start simulating from Sunday.
+11.After the i loop terminates we print the days_off.
