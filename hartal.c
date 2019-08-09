@@ -23,7 +23,7 @@ int main()
 					ct++;break;
 				}
 			}
-			if(ct>0)
+			if(ct!=0)
 			days_off++;
 			if(i%7==5)
 			{
